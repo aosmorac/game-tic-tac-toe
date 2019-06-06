@@ -22,14 +22,14 @@
                 winner: '',
                 playing: true,
                 rules: [
-                    [[1,2,3]]
-                    , [[1,4,7]]
-                    , [[1,5,9]]
-                    , [[2,5,8]]
-                    , [[3,5,7]]
-                    , [[3,6,9]]
-                    , [[4,5,6]]
-                    , [[7,8,9]]
+                      [1,2,3]
+                    , [1,4,7]
+                    , [1,5,9]
+                    , [2,5,8]
+                    , [3,5,7]
+                    , [3,6,9]
+                    , [4,5,6]
+                    , [7,8,9]
                 ],
             }
         },
@@ -38,7 +38,7 @@
                 var self = this
                 this.rules.some(function(rule) {
                     var status = true;
-                    rule[0].every(function(position) {
+                    rule.every(function(position) {
                         if (snap.cells[position] != snap.symbol) {
                             status = false;
                         }
